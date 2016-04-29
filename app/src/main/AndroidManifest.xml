@@ -15,6 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Autorzy">
+            android:parentActivityName="pl.edu.ur.kulturalia.Home" >
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.ur.kulturalia.Home" />
+
+        </activity>
     </application>
 
 </manifest>
