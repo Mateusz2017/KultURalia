@@ -52,7 +52,8 @@ public class DatabaseHelper extends SQLiteAssetHelper {
         //  DatabaseHelper db=new DatabaseHelper(this);
         //Cursor c= db.getKoncert(1,"Czwartek");
         //System.out.println(c.getString(1)+c.getString(2));
-
+        // c.getString(1) zwraca nazwę koncertu
+        //c.getString(2) zwraca czas koncertu
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 
