@@ -41,6 +41,8 @@ public class Intro extends AppCompatActivity {
         Runnable runnable = new Runnable() { //robię nowy wątek który po pewnym czasie wystartuje menu
             @Override
             public void run() {
+
+
                 try {
                     Thread.sleep(5000); //opóźnienie startu menu w milisekundach
                     ImageView logo = (ImageView) findViewById(R.id.logo);
