@@ -1,39 +1,15 @@
 package pl.edu.ur.kulturalia;
 
 import android.content.Intent;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Intro extends AppCompatActivity {
-
-    /*CountDownTimer cTimer = null;
-
-    public void startLogoTimer() {
-
-        cTimer = new CountDownTimer(5000, 100) {
-            public void onTick(long millisUntilFinished) {
-
-                logo.setAlpha(millisUntilFinished/50000f);
-            }
-            public void onFinish() {
-            }
-        };
-        cTimer.start();
-    }
-    public void cancelTimer() {
-        if(cTimer!=null)
-            cTimer.cancel();*/
-
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getSupportActionBar().hide(); //ukrywamy górny pasek tytułu
@@ -44,20 +20,28 @@ public class Intro extends AppCompatActivity {
 
 
                 try {
-                    Thread.sleep(5000); //opóźnienie startu menu w milisekundach
                     ImageView logo = (ImageView) findViewById(R.id.logo);
-                    Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
-                    logo.startAnimation(animation1);
+                    ImageView logo_ssur = (ImageView) findViewById(R.id.logo_ssur);
+                    ImageView logo_urz = (ImageView) findViewById(R.id.logo_urz);
+                    Animation FadeInAnimation = AnimationUtils.loadAnimation(Intro.this, R.anim.fade_logo);
+                    Animation FadeInAnimation2 = AnimationUtils.loadAnimation(Intro.this, R.anim.fade_bottom_logo);
+                    logo.startAnimation(FadeInAnimation);
+                    logo_ssur.startAnimation(FadeInAnimation2);
+                    logo_urz.startAnimation(FadeInAnimation2);
+
+                    Thread.sleep(6000); //opóźnienie startu menu w milisekundach
                 }
                 catch(Exception e)
                 {
-                    Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),e.toString(), Toast.LENGTH_LONG).show();
                 }
                 Intent intent = new Intent(getApplicationContext(), Home.class); //1
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //2
                 getApplicationContext().startActivity(intent); //3
                 //1 2 3 przechodzimy do menu głównego
+                finish();
             }
+
         };
         Thread thread = new Thread(runnable); //4
         thread.start(); //5
