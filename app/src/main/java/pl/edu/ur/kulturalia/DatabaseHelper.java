@@ -17,31 +17,14 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class DatabaseHelper extends SQLiteAssetHelper {
-    private static String databasePath;
     public static String databaseName = "kulturalia.db";
-    private SQLiteDatabase myDataBase;
     private final Context myContext;
 
 
     public DatabaseHelper(Context context) {
-
         super(context, databaseName, null, 1);
-
         this.myContext = context;
-        databasePath=myContext.getDatabasePath("kulturalia").getPath();
 
-
-    }
-
-
-
-
-
-
-
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
 
@@ -56,18 +39,11 @@ public class DatabaseHelper extends SQLiteAssetHelper {
         //c.getString(2) zwraca czas koncertu
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
-
         String [] sqlSelect = {id+" _id", "nazwa","czas"};
-
-
         qb.setTables(tableName);
         Cursor c = qb.query(db, sqlSelect, null, null,
                 null, null, null);
-
         c.moveToFirst();
         return c;
-
     }
-
-
 }
