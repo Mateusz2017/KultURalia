@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_harmonogram2"
+            android:title="Harmonogram" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_mapa"
+            android:title="Mapa kampusu" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_dojazd2"
+            android:title="Dojazd" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_eventy"
+            android:title="Eventy" />
+        <item
+            android:id="@+id/sponsorzy"
+            android:icon="@drawable/ic_strzalka"
+            android:title="Sponsorzy" />
+    </group>
+
+    <item android:title="Dodatkowe">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_autorzy"
+                android:title="Autorzy" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_action_name3"
+                android:title="Fanpage" />
+        </menu>
+    </item>
+
+</menu>
