@@ -35,7 +35,7 @@ public class Intro extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),e.toString(), Toast.LENGTH_LONG).show();
                 }
-                Intent intent = new Intent(getApplicationContext(), Home.class); //1
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class); //1
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //2
                 getApplicationContext().startActivity(intent); //3
                 //1 2 3 przechodzimy do menu głównego
