@@ -37,6 +37,7 @@ public class DatabaseHelper extends SQLiteAssetHelper {
         //System.out.println(c.getString(1)+c.getString(2));
         // c.getString(1) zwraca nazwę koncertu
         //c.getString(2) zwraca czas koncertu
+        // indexy koncertów zawarte w przedziale 1-7 
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
         String [] sqlSelect = {id+" _id", "nazwa","czas"};
