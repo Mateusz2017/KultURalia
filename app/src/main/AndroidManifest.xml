@@ -4,17 +4,20 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_ikona"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home"></activity>
+        <activity
+            android:name="pl.edu.ur.kulturalia.MainActivity"
+            android:label="@string/app_name"
+            />
         <activity android:name=".Autorzy">
-            android:parentActivityName="pl.edu.ur.kulturalia.Home" >
+            android:parentActivityName="pl.edu.ur.kulturalia.Autorzy" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="pl.edu.ur.kulturalia.Home" />
+                android:value="pl.edu.ur.kulturalia.Autorzy" />
         </activity>
         <activity android:name=".Intro">
             <intent-filter>
@@ -23,10 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
     </application>
 
 </manifest>

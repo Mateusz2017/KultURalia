@@ -4,9 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -21,22 +21,21 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        setContentView(pl.edu.ur.kulturalia.R.layout.activity_urz);
+        Toolbar toolbar = (Toolbar) findViewById(pl.edu.ur.kulturalia.R.id.toolbar);
+        final Time odliczanie = new Time();
+        FloatingActionButton fab = (FloatingActionButton) findViewById(pl.edu.ur.kulturalia.R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, odliczanie.wyrazenie, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(pl.edu.ur.kulturalia.R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, pl.edu.ur.kulturalia.R.string.navigation_drawer_open, pl.edu.ur.kulturalia.R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.urz, menu);
         return true;
     }
 
@@ -70,6 +69,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            finish();
+            System.exit(0);
             return true;
         }
 
@@ -83,20 +84,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.harmonogram) {
-            // Handle the camera action
-        } else if (id == R.id.campus_map) {
+
+        } else if (id == R.id.mapa_kampusu) {
 
         } else if (id == R.id.dojazd) {
 
-        } else if (id == R.id.sponsors) {
+        } else if (id == R.id.sponsorzy) {
 
-        } else if (id == R.id.autors) {
+        } else if (id == R.id.autorzy) {
             Intent intent = new Intent(MainActivity.this, Autorzy.class);
             startActivity(intent);
+            return true;
         } else if (id == R.id.fanpage) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/kultURaliaUR"));
-            startActivity(Intent.createChooser(intent, "Wybór przeglądarki"));
-
+            Uri uri = Uri.parse("http://facebook.com/kultURaliaUR");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

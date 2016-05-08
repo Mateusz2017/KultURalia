@@ -12,52 +12,12 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
-        android:src="@drawable/pancerz"
-        android:layout_marginTop="62dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sponsorzy:"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="38sp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageButton3"
         android:src="@drawable/kni"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="71dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dr. Inż. Krzysztof Pancerz"
-        android:id="@+id/textView2"
-        android:textSize="24sp"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Miejsce na jakiś życiorys albo inne lanie wody"
-        android:id="@+id/textView3"
-        android:textSize="24sp"
-        android:layout_alignBottom="@+id/imageButton2"
-        android:layout_toRightOf="@+id/imageButton2"
-        android:layout_toEndOf="@+id/imageButton2" />
+        android:layout_marginTop="65dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,7 +25,7 @@
         android:text="Autorzy"
         android:id="@+id/textView4"
         android:textSize="36sp"
-        android:layout_above="@+id/imageButton3"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
