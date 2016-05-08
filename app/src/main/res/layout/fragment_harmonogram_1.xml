@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mateusz.wydarzenia.Wydarzenia_1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:text="@string/czwartek"
+        android:id="@+id/textView"
+        android:layout_gravity="left|top" />
+</FrameLayout>

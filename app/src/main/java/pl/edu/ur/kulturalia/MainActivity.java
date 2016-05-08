@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.harmonogram) {
-
+            Intent intent = new Intent(MainActivity.this, Harmonogram.class);
+            startActivity(intent);
         } else if (id == R.id.mapa_kampusu) {
 
         } else if (id == R.id.dojazd) {

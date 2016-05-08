@@ -5,4 +5,10 @@
     <string name="navigation_drawer_close">Zamknij menu</string>
 
     <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_harmonogram">Harmonogram</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="czwartek">Czwartek</string>
+    <string name="piatek">Piątek</string>
+    <string name="sobota">Sobota</string>
 </resources>
