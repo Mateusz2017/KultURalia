@@ -29,7 +29,7 @@ public class Intro extends AppCompatActivity {
                     logo_ssur.startAnimation(FadeInAnimation2);
                     logo_urz.startAnimation(FadeInAnimation2);
 
-                    Thread.sleep(6000); //opóźnienie startu menu w milisekundach
+                    Thread.sleep(4500); //opóźnienie startu menu w milisekundach
                 }
                 catch(Exception e)
                 {
