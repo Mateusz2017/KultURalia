@@ -24,13 +24,6 @@ public class DatabaseHelper extends SQLiteAssetHelper {
 
     }
 
-
-
-
-
-
-
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
@@ -56,6 +49,7 @@ public class DatabaseHelper extends SQLiteAssetHelper {
                 null, null, null);
 
         c.moveToFirst();
+
         return c;
 
     }
