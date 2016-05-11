@@ -95,7 +95,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.dojazd) {
             Toast.makeText(this,"Jak do nas dojechać?", Toast.LENGTH_SHORT).show();
-
+            Intent intent = new Intent(MainActivity.this, Dojazd.class);
+            startActivity(intent);
         } else if (id == R.id.eventy) {
             Toast.makeText(this,"Eventy KultURaliowe", Toast.LENGTH_SHORT).show();
 
