@@ -5,76 +5,8 @@
     tools:context="com.example.mateusz.wydarzenia.Wydarzenia_3">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s1"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <ListView android:id="@+id/listView3" android:layout_marginTop="75dp" android:background="#FFF" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" tools:listitem="@android:layout/simple_list_item_2">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s2"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s3"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s4"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s5"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s6"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s7"
-        android:layout_gravity="right|top"
-        android:layout_above="@+id/koncert_s8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_s8"
-        android:layout_gravity="right|top"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+    </ListView>
 
 </RelativeLayout>
