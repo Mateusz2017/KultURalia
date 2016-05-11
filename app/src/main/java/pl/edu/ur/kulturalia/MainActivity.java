@@ -96,6 +96,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.dojazd) {
             Toast.makeText(this,"Jak do nas dojechać?", Toast.LENGTH_SHORT).show();
 
+        } else if (id == R.id.eventy) {
+            Toast.makeText(this,"Eventy KultURaliowe", Toast.LENGTH_SHORT).show();
+
         } else if (id == R.id.sponsorzy) {
             Toast.makeText(this,"Sponsorzy KultURaliów ", Toast.LENGTH_SHORT).show();
 
