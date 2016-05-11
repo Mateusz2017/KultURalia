@@ -1,5 +1,6 @@
 package pl.edu.ur.kulturalia;
 
+import android.database.Cursor;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,10 +18,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Harmonogram extends AppCompatActivity {
+
+    private ListView list ;
+    private ArrayAdapter<String> adapter ;
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -37,11 +45,12 @@ public class Harmonogram extends AppCompatActivity {
      */
     private ViewPager mViewPager;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_harmonogram);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

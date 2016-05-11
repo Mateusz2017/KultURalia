@@ -1,82 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.mateusz.wydarzenia.Wydarzenia_1">
+    android:layout_height="match_parent">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c1"
-        android:layout_gravity="right|top"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="52dp" />
+    <ListView android:id="@+id/listView1" android:layout_marginTop="75dp" android:background="#FFF" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" tools:listitem="@android:layout/simple_list_item_2">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c2"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c3"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c4"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c5"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c6"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c7"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:id="@+id/koncert_c8"
-        android:layout_gravity="right|top"
-        android:layout_below="@+id/koncert_c7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+    </ListView>
 
 </RelativeLayout>
