@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -70,5 +71,13 @@ public class Intro extends AppCompatActivity {
         Thread thread = new Thread(runnable); //4
         thread.start(); //5
         //4 5 robię nowy wątek i startuję go
+    }
+    @Override
+    public boolean onTouchEvent(MotionEvent e) {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getApplicationContext().startActivity(intent);
+        finish();
+        return true;
     }
 }

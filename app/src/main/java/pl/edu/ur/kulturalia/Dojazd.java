@@ -140,7 +140,7 @@ public class Dojazd extends AppCompatActivity {
             alertDialog = new AlertDialog.Builder(Dojazd.this);
 
 
-            alertDialog.setPositiveButton("Nawigacja(GoogleMaps)", new DialogInterface.OnClickListener() {
+            alertDialog.setPositiveButton("Nawigacja (GoogleMaps)", new DialogInterface.OnClickListener() {
 
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -150,7 +150,7 @@ public class Dojazd extends AppCompatActivity {
 
             });
 
-            alertDialog.setNegativeButton("MPK(RzeszĂłw)", new DialogInterface.OnClickListener() {
+            alertDialog.setNegativeButton("MPK (Rzeszów)", new DialogInterface.OnClickListener() {
 
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
