@@ -1,16 +1,40 @@
 package pl.edu.ur.kulturalia;
 
+import android.app.NotificationManager;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+
+
+
 public class Intro extends AppCompatActivity {
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Notyfikacja:
+        NotificationCompat.Builder mBuilder;
+        mBuilder = new NotificationCompat.Builder(getApplicationContext());
+        mBuilder.setSmallIcon(R.drawable.logourz);
+        mBuilder.setContentTitle("KultURalia");
+        mBuilder.setContentText("Zobacz co przygotowaliśmy dzisiaj dla Ciebie!");
+        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logourz);
+        mBuilder.setLargeIcon(largeIcon);
+
+        int mNotificationId = 001;
+        NotificationManager mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        mNotifyMgr.notify(mNotificationId,mBuilder.build());
+        //Powiadomienie, które pojawia się po włączeniu aplikacji.
+
         super.onCreate(savedInstanceState);
         this.getSupportActionBar().hide(); //ukrywamy górny pasek tytułu
         setContentView(R.layout.intro);
