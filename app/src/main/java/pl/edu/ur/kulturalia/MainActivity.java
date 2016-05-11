@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,19 +87,28 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.harmonogram) {
+            Toast.makeText(this,"Harmonogram imprez", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, Harmonogram.class);
             startActivity(intent);
         } else if (id == R.id.mapa_kampusu) {
+            Toast.makeText(this,"Mapa kampusu", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.dojazd) {
+            Toast.makeText(this,"Jak do nas dojechać?", Toast.LENGTH_SHORT).show();
+
+        } else if (id == R.id.eventy) {
+            Toast.makeText(this,"Eventy KultURaliowe", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.sponsorzy) {
+            Toast.makeText(this,"Sponsorzy KultURaliów ", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.autorzy) {
+            Toast.makeText(this,"Autorzy aplikacji", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, Autorzy.class);
             startActivity(intent);
             return true;
         } else if (id == R.id.fanpage) {
+            Toast.makeText(this,"Nasz fanpage", Toast.LENGTH_SHORT).show();
             Uri uri = Uri.parse("http://facebook.com/kultURaliaUR");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);

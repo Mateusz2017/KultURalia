@@ -25,7 +25,7 @@ public class Time {
         long hours = (secondsDay / 3600)-1;
 
         if (days <= 0 && minutes <= 0 && hours <= 0) {
-            wyrazenie = "KultURalia już się rozpoczęły!";
+            wyrazenie = "Dobrej zabawy!";
         } else {
             wyrazenie = "Do KultURaliów pozostało: " + days + " dni " + hours + " godz. " + minutes + " min.";
         }
