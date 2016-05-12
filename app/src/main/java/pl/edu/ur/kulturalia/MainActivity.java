@@ -102,6 +102,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.sponsorzy) {
             Toast.makeText(this,"Sponsorzy KultURaliów ", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, MainDonors.class);
+            startActivity(intent);
+            return true;
 
         } else if (id == R.id.autorzy) {
             Toast.makeText(this,"Autorzy aplikacji", Toast.LENGTH_SHORT).show();
