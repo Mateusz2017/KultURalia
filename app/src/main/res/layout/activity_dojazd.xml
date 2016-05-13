@@ -9,7 +9,9 @@
         android:layout_height="wrap_content"
         android:text="Koncerty(Scena główna)"
         android:id="@+id/button"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.20"
+        android:background="@layout/gradient_bg"
+        android:textColor="#ffffff" />
 
 
     <Button
@@ -18,14 +20,18 @@
         android:text="Finał turnieju CS GO"
         android:id="@+id/button6"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.20"
+        android:background="@layout/gradient_bg"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button7"
         android:text="Before Kulturaliowy(Klub pod palmą)"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.20"
+        android:background="@layout/gradient_bg"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="match_parent"
@@ -33,13 +39,17 @@
         android:text="Skoki Spadochronowe"
         android:id="@+id/button8"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.20"
+        android:background="@layout/gradient_bg"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Palmowa Scena Kulturaliowa(Klub pod palmą)"
         android:id="@+id/button9"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.20"
+        android:background="@layout/gradient_bg"
+        android:textColor="#ffffff" />
 
 </LinearLayout>
