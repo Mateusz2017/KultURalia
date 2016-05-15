@@ -1,22 +1,19 @@
 package pl.edu.ur.kulturalia;
 
-import android.content.Context;
+
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,21 +21,23 @@ import java.util.Map;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Harmonogram_1 extends ListFragment {
+public class Scena_klubowa_1 extends ListFragment {
 
     private ListView list ;
     private ArrayAdapter<String> adapter ;
+    private TextView bb;
 
-    public Harmonogram_1() {
+    public Scena_klubowa_1() {
         // Required empty public constructor
-
     }
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         DatabaseHelper db = new DatabaseHelper(this.getContext());
-        Cursor c = db.getKoncert(1, "Czwartek");
+        Cursor c = db.getKoncert(1, "Czwartek1");
+//        bb = (TextView)  find
         ArrayList<Map<String, String>> events = new ArrayList<>();
         while(true)
         {
