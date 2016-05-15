@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this,"Harmonogram imprez", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, Harmonogram.class);
             startActivity(intent);
+        } else if (id == R.id.pogoda) {
+            Toast.makeText(this,"Pogoda", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.mapa_kampusu) {
             Toast.makeText(this,"Mapa kampusu", Toast.LENGTH_SHORT).show();
 

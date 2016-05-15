@@ -7,6 +7,10 @@
             android:icon="@drawable/ic_harmonogram2"
             android:title="Harmonogram" />
         <item
+            android:id="@+id/pogoda"
+            android:icon="@drawable/ic_pogoda"
+            android:title="Pogoda" />
+        <item
             android:id="@+id/mapa_kampusu"
             android:icon="@drawable/ic_mapa"
             android:title="Mapa kampusu" />
