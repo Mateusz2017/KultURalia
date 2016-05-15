@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 
 
-
 public class Intro extends AppCompatActivity {
 
 

@@ -20,7 +20,7 @@
             android:title="Dojazd" />
         <item
             android:id="@+id/scena_klubowa"
-            android:icon="@drawable/ic_eventy"
+            android:icon="@drawable/ic_scena"
             android:title="Scena klubowa" />
         <item
             android:id="@+id/eventy"
