@@ -30,7 +30,7 @@ public class Intro extends AppCompatActivity {
         //Notyfikacja:
         NotificationCompat.Builder mBuilder;
         mBuilder = new NotificationCompat.Builder(getApplicationContext());
-        mBuilder.setSmallIcon(R.drawable.logourz);
+        mBuilder.setSmallIcon(R.drawable.ic_ur);
         mBuilder.setContentTitle("KultURalia");
         mBuilder.setContentText("Zobacz co przygotowaliśmy dzisiaj dla Ciebie!");
         Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logourz);
