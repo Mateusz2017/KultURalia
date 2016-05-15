@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 
-public class Autorzy extends AppCompatActivity {
+public class Autorzy extends AppCompatActivity  {
 
 
     @Override

@@ -70,6 +70,7 @@
                 android:value="pl.edu.ur.kulturalia.MainActivity" />
         </activity>
         <activity android:name=".Dojazd" />
+        <activity android:name=".Weather" />
         <activity android:name=".WeatherActivity" />
         <activity
             android:name=".Scena_klubowa"
