@@ -1,6 +1,7 @@
 package pl.edu.ur.kulturalia;
 
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -22,6 +23,10 @@ public class Intro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Intent intent = new Intent(this, NotificationReceiver.class);
+        PendingIntent pIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, 0);
+
         //Notyfikacja:
         NotificationCompat.Builder mBuilder;
         mBuilder = new NotificationCompat.Builder(getApplicationContext());
@@ -30,6 +35,8 @@ public class Intro extends AppCompatActivity {
         mBuilder.setContentText("Zobacz co przygotowaliśmy dzisiaj dla Ciebie!");
         Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logourz);
         mBuilder.setLargeIcon(largeIcon);
+        mBuilder.addAction(R.drawable.ic_kulturalia,"Zobacz więcej", pIntent);
+
 
         int mNotificationId = 001;
         NotificationManager mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -80,4 +87,5 @@ public class Intro extends AppCompatActivity {
         finish();
         return true;
     }
+
 }
