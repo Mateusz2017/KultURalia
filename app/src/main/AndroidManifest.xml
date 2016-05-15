@@ -73,7 +73,7 @@
         <activity android:name=".WeatherActivity" />
         <activity
             android:name=".Scena_klubowa"
-            android:label="KutURalia"
+            android:label="KultURalia"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
