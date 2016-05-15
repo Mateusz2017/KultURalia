@@ -15,8 +15,8 @@ public class Organizatorzy extends AppCompatActivity {
 
     ListView list;
 
-    String[] names ={"Uniwersytet Rzeszowski"};
-    int[] images = {R.drawable.logourz}; //wstawia logo sponsora
+    String[] names ={"Uniwersytet Rzeszowski", "Samorząd Studencki Uniwersytetu Rzeszowskiego"};
+    int[] images = {R.drawable.logourz, R.drawable.logossur}; //wstawia logo sponsora
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
