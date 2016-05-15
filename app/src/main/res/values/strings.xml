@@ -11,5 +11,6 @@
     <string name="czwartek">Czwartek</string>
     <string name="piatek">Piątek</string>
     <string name="sobota">Sobota</string>
+    <string name="title_activity_scena_klubowa">Scena_klubowa</string>
 
 </resources>

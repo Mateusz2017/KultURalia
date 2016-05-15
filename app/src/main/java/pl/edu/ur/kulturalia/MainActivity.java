@@ -99,8 +99,13 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this,"Mapa kampusu", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.dojazd) {
-            Toast.makeText(this,"Jak do nas dojechać?", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Jak do nas dojechać?", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, Dojazd.class);
+            startActivity(intent);
+
+        } else if (id == R.id.scena_klubowa) {
+            Toast.makeText(this,"Scena klubowa", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, Scena_klubowa.class);
             startActivity(intent);
 
         } else if (id == R.id.eventy) {

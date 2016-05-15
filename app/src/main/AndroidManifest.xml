@@ -51,8 +51,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pl.edu.ur.kulturalia.Patroni_medialni" />
         </activity>
-        <activity android:name=".Events"></activity>
-        <activity android:name=".Autorzy"></activity>
+        <activity android:name=".Events" />
+        <activity android:name=".Autorzy" />
         <activity android:name=".Intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,8 +69,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pl.edu.ur.kulturalia.MainActivity" />
         </activity>
-        <activity android:name=".Dojazd"></activity>
-        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".Dojazd" />
+        <activity android:name=".WeatherActivity" />
+        <activity
+            android:name=".Scena_klubowa"
+            android:label="@string/title_activity_scena_klubowa"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.ur.kulturalia.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
