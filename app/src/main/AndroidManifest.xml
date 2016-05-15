@@ -62,7 +62,7 @@
         </activity>
         <activity
             android:name=".Harmonogram"
-            android:label="@string/title_activity_harmonogram"
+            android:label="KultURalia"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -73,7 +73,7 @@
         <activity android:name=".WeatherActivity" />
         <activity
             android:name=".Scena_klubowa"
-            android:label="@string/title_activity_scena_klubowa"
+            android:label="KutURalia"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
