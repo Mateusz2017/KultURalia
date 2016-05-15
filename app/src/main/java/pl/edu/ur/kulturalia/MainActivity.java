@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.pogoda) {
             Toast.makeText(this,"Pogoda", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(MainActivity.this, Weather.class);
+            Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.mapa_kampusu) {
