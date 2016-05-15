@@ -21,6 +21,7 @@ public class Intro extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,10 +42,12 @@ public class Intro extends AppCompatActivity {
         mBuilder.setSmallIcon(R.drawable.logourz);
         mBuilder.setContentTitle("KultURalia");
         mBuilder.setContentText("Zobacz co przygotowaliśmy dzisiaj dla Ciebie!");
+        mBuilder.build();
         Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logourz);
         mBuilder.setLargeIcon(largeIcon);
         mBuilder.addAction(R.drawable.ic_kulturalia,"Zobacz więcej", pIntent );
         mBuilder.setAutoCancel(true);
+
 
 
 
@@ -97,5 +100,7 @@ public class Intro extends AppCompatActivity {
         finish();
         return true;
     }
+
+
 
 }
