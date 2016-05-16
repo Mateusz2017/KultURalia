@@ -72,6 +72,7 @@
         <activity android:name=".Dojazd" />
         <activity android:name=".Weather" />
         <activity android:name=".WeatherActivity" />
+        <activity android:name=".Mapa" />
         <activity
             android:name=".Scena_klubowa"
             android:label="KultURalia"
