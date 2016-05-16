@@ -166,7 +166,7 @@
             android:layout_column="0"
             android:src="@drawable/logourz"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="96dp" />
+            android:layout_marginBottom="64dp" />
 
 
     </GridLayout>
