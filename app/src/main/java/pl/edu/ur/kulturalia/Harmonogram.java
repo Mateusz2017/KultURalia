@@ -134,11 +134,11 @@ public class Harmonogram extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Czwartek";
+                    return "Czwartek 19.05";
                 case 1:
-                    return "Piątek";
+                    return "Piątek 20.05";
                 case 2:
-                    return "Sobota";
+                    return "Sobota 21.05";
             }
             return null;
         }
