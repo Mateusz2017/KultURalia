@@ -15,8 +15,12 @@ public class Organizatorzy extends AppCompatActivity {
 
     ListView list;
 
-    String[] names ={"Uniwersytet Rzeszowski", "Samorząd Studencki Uniwersytetu Rzeszowskiego"};
-    int[] images = {R.drawable.logourz, R.drawable.logossur}; //wstawia logo sponsora
+    String[] names ={"Uniwersytet Rzeszowski", "Samorząd Studencki Uniwersytetu Rzeszowskiego",
+    "Stowarzyszenie Studentów i Absolwentów UR", "VI Juwenalia Podkarpackie", "Karolina Sobala - Główny Koordynator", "Justyna Ogrodzka - Koordynator ds. wydarzeń kulturalnych", "Robert Karnaś - Koordynator ds. wydarzeń sportowych",
+    "Karolina Borowiec - Koordynator ds. korowodu", "Marta Guziakiewicz - Rzecznik Prasowy SSUR", "Kamila Sikorska - Koordynator konkursu Student ma Talent", "Kamil Trojnar - Koordynator ds. zespołów i sceny", "Damian Strojny - Kierownik biura",
+            "Paulina Zwierzyńska - Koordynator VIP ROOM", "Piotr Moroch - Koordynator ds. bezpieczeństwa"};
+    int[] images = {R.drawable.logourz, R.drawable.logossur, R.drawable.o0, R.drawable.o01, R.drawable.o1, R.drawable.o2,
+    R.drawable.o3, R.drawable.o4, R.drawable.o5, R.drawable.o6, R.drawable.o7, R.drawable.o8, R.drawable.o9, R.drawable.o10}; //wstawia logo sponsora
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

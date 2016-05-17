@@ -25,7 +25,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Patronaty honorowe"
+        android:text="Patronat honorowy"
         android:id="@+id/button3"
         android:background="@layout/gradient_bg"
         android:textColor="#ffffff"
@@ -34,7 +34,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Patronaci medialni"
+        android:text="Patroni medialni"
         android:id="@+id/button4"
         android:background="@layout/gradient_bg"
         android:backgroundTintMode="multiply"
